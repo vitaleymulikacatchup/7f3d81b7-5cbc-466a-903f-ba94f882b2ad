@@ -21,7 +21,7 @@ export default function Home() {
       <TokenBillboardHero
         title="Welcome to MemePulse!"
         subtitle="Dive into the world of meme coins"
-        contractAddress="0x123...
+        contractAddress="0x123..."
         copyButtonText="Copy Address"
         copiedText="Address Copied!"
       />
@@ -34,11 +34,11 @@ export default function Home() {
       />
       <BigNumberTokenomics
         title="Tokenomics"
-        description="Understanding our tokens.
+        description="Understanding our tokens."
         kpiItems={[
-          { value: "10M", description: "Total Supply", longDescription: "Total number of tokens available.", icon: UserCircle },
+          { value: "10M", description: "Total Supply", longDescription: "Total number of tokens available.", icon: DollarSign },
           { value: "1M", description: "Tokens in Circulation", longDescription: "Currently active tokens.", icon: DollarSign },
-          { value: "5M", description: "Merged Tasks", longDescription: "Tokens allocated to tasks.", icon: CheckCircle },
+          { value: "5M", description: "Merged Tasks", longDescription: "Tokens allocated to tasks.", icon: DollarSign },
         ]}
       />
       <BentoFAQ
