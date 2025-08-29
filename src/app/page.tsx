@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import NavbarBase from '@/components/navigation/NavbarBase';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
 import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
@@ -15,59 +15,48 @@ export default function Home() {
         logoAlt="MemePulse Logo"
         leftButtonText="Menu"
         rightButtonText="Contact"
-        className="sticky top-0 z-10"
+        className="bg-transparent sticky top-0"
+        buttonClassName="bg-primary text-white"
       />
-
       <TokenBillboardHero
-        title="Welcome to MemePulse"
-        subtitle="Explore the vibrant world of meme coins"
-        contractAddress="0x1234567890"
+        title="Welcome to MemePulse!"
+        subtitle="Dive into the world of meme coins"
+        contractAddress="0x123...
         copyButtonText="Copy Address"
         copiedText="Address Copied!"
       />
-
       <SocialsAbout
-        title="About MemePulse"
-        descriptions={[
-          "MemePulse is a community-driven meme coin.",
-          "Join us in the fun and embrace the meme culture!"
-        ]}
+        title="Connect with us"
+        descriptions={['Join our community!', 'Follow us on social media!', 'Stay updated with our latest news.']}
       />
-
       <HowToBuy2D
         variant="simple"
       />
-
       <BigNumberTokenomics
         title="Tokenomics"
-        description="Discover the numbers behind MemePulse."
+        description="Understanding our tokens.
         kpiItems={[
-          { value: "100M", description: "Total Supply", longDescription: "Total supply of MemePulse coins", icon: { name: 'DollarSign', size: 24 } },
-          { value: "50M", description: "Market Cap", longDescription: "Current Market Capitalization", icon: { name: 'TrendingUp', size: 24 } },
-          { value: "200k", description: "Holders", longDescription: "Current number of holders of MemePulse", icon: { name: 'Users', size: 24 } }
+          { value: "10M", description: "Total Supply", longDescription: "Total number of tokens available.", icon: UserCircle },
+          { value: "1M", description: "Tokens in Circulation", longDescription: "Currently active tokens.", icon: DollarSign },
+          { value: "5M", description: "Merged Tasks", longDescription: "Tokens allocated to tasks.", icon: CheckCircle },
         ]}
       />
-
       <BentoFAQ
         items={[
-          { title: "What is MemePulse?", content: "MemePulse is a playful meme coin designed to engage and entertain!" },
-          { title: "How do I buy MemePulse?", content: "You can buy MemePulse easily on any decentralized exchange." },
-          { title: "What are the tokenomics?", content: "MemePulse features a deflationary model with rewards for holders." },
-          { title: "How can I learn more?", content: "Join our community on social media for updates!" }
+          { title: "What is a meme coin?", content: "A cryptocurrency that is based on internet memes." },
+          { title: "How can I buy MemePulse?", content: "You can buy MemePulse from popular exchanges." },
+          { title: "Is it safe to invest?", content: "Like any investment, please do your own research." }
         ]}
       />
-
       <FooterLogoEmphasisBackgroundGradient
         logoSrc="/images/logo.svg"
         logoAlt="MemePulse Logo"
-        logoText="MemePulse"
+        logoText="MemePulse Team"
         items={[
-          { label: "Privacy Policy", onClick: () => alert('Privacy Policy Clicked') },
-          { label: "Terms of Service", onClick: () => alert('Terms of Service Clicked') },
-          { label: "Contact Us", onClick: () => alert('Contact Us Clicked') }
+          { label: "Privacy Policy", onClick: () => {/* handle click */} },
+          { label: "Terms of Use", onClick: () => {/* handle click */} },
+          { label: "Contact Us", onClick: () => {/* handle click */} },
         ]}
-        className="footer"
-        gradientStyle={{ background: 'linear-gradient(135deg, rgba(255,90,138,0.9), rgba(0,140,255,0.9))' }}
       />
     </>
   );
