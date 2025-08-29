@@ -13,14 +13,8 @@ export default function Home() {
       <NavbarBase
         logoSrc="/images/logo.svg"
         logoAlt="MemePulse Logo"
-        navItems={[
-          { name: "Hero", id: "hero" },
-          { name: "About", id: "about" },
-          { name: "How to Buy", id: "how-to-buy" },
-          { name: "Tokenomics", id: "tokenomics" },
-          { name: "FAQ", id: "faq" },
-          { name: "Footer", id: "footer" }
-        ]}
+        leftButtonText="Menu"
+        rightButtonText="Contact"
         className="sticky top-0 z-10"
       />
 
