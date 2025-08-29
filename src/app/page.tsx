@@ -6,6 +6,7 @@ import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import BentoFAQ from '@/components/sections/layouts/faq/BentoFAQ';
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
+import { DollarSign } from 'lucide-react';
 
 export default function Home() {
   return (
